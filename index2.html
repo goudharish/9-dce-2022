@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script src="./js/script.js"></script>
+
+    <script>
+
+    </script>
+</head>
+<body>
+    <h1 id="indianews1"></h1>
+      <p id="indianews2"></p>
+      <p id="indianews3"></p2>
+    
+      <hr>
+      <h1 class="a1"></h1>
+      <p class="b1"></p>
+      <p class="c1"></p>
+  
+      <hr>
+      <h1 data-e="e"></h1>
+      <p data-f="f"></p>
+      <p data-g="g"></p>
+  
+      <hr>
+  
+      <h1 class="n1"></h1>
+      
+
+  <script>
+    let indianews=[
+    // p:v
+{
+    //1. P:V  
+    heading:"Congress high command to pick Himachal Pradesh chief minister, all MLAs decide",
+    publised:"Rajeev Shukla announced that all 40 MLAs of the party have unanimously passed the proposal to leave the decision to select the chief minister of the state on the party's high command in New Delhi.",
+    update:"Updated on Dec 09, 2022 10:43 PM IST",
+
+
+    //2. methods
+},
+{
+    heading2:"Vladimir Putin warns of possible production cuts over $60 oil price cap",
+    publised2:'"We will consider a possible reduction in production if necessary," Putin told reporters at a press conference in Kyrgyzstans capital Bishkek following a regional summit.',
+    update2:"Published on Dec 09, 2022 07:39 PM IST",
+
+},
+{ 
+    heading:"Madhya Pradesh an ideal place for investment, CM Chouhan tells US investors",
+    publised:"The chief minister also invited them to attend the Global Investors Summit, which will take place in Indore on January 11 and 12.",
+    update:"Published on Dec 09, 2022 01:12 PM IST",
+
+
+
+}
+]
+let x= document.getElementById('indianews1')
+console.log(indianews[0].heading)
+x.innerHTML=indianews[0].heading;
+
+
+let y= document.getElementById('indianews2')
+console.log(indianews[0].publised)
+y.innerHTML=indianews[0].publised;
+
+
+
+let z=document.getElementById('indianews3')
+z.innerHTML=indianews[0].update;
+
+
+let a=document.querySelector('.a1')
+console.log(indianews[1].heading2)
+a.innerHTML=indianews[1].heading2;
+
+
+let b=document.querySelector('.b1')
+b.innerHTML=indianews[1].publised2;
+
+let c=document.querySelector('p.c1');
+     console.log(indianews[1].update2)
+     c.innerHTML=indianews[1].update2;
+     c.style.color="aqua"
+
+
+    let e= document.querySelector('[data-e]')
+    e.innerHTML=indianews[2].heading;
+    e.style.color="red"
+
+    let f= document.querySelector('[data-f]')
+    f.innerHTML=indianews[2].publised;
+    f.style.color="pink"
+
+    let g= document.querySelector('[data-g]')
+    g.innerHTML=indianews[2].update;
+    g.style.color="green"
+  </script>  
+</body>
+</html>
